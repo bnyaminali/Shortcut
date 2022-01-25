@@ -1,196 +1,138 @@
-<!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+	<style type="text/css">
+	<!--
+
+body {
+	margin: 0;  padding: 0;  margin-bottom: 15px;  margin-top: 8px;
+	background: #77b;
+}
+body, td {
+	font: 14px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	}
+
+#subTitle {
+	background: #000;  color: #fff;  padding: 4px;  font-weight: bold; 
+	}
+
+#siteNavigation a, #siteNavigation .current {
+	font-weight: bold;  color: #448;
+	}
+#siteNavigation a:link    { text-decoration: none; }
+#siteNavigation a:visited { text-decoration: none; }
+
+#siteNavigation .current { background-color: #ccd; }
+
+#siteNavigation a:hover   { text-decoration: none;  background-color: #fff;  color: #000; }
+#siteNavigation a:active  { text-decoration: none;  background-color: #ccc; }
 
 
-<!-- Mirrored from broank.bss.design/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Jan 2022 15:37:17 GMT -->
-<head>
-    <meta charset="utf-8">
-<link rel="apple-touch-icon" href="../raw.githubusercontent.com/Polyphian/repo/master/assets/img/TouchIcon.png"><meta name="theme-color" 
-      content="#fff" 
-      media="(prefers-color-scheme: light)">
-<meta name="theme-color" 
-      content="#000" 
-      media="(prefers-color-scheme: dark)">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Broank</title>
-    <meta property="og:image" content="assets/img/OGimageAll.png">
-    <meta name="twitter:title" content="Broank">
-    <meta name="description" content="iOS Icon Themes, Shortcuts, other mods and tips.">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:type" content="website">
-    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="assets/img/favicon18040fb.png?h=52afd1ab3940c8a049d60216da57108b">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon167088.png?h=22072d8adefeb7ae6f6218f57e8df199">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon32889e.png?h=05976d1bc88e0b3d8aa10720e93fc61d">
-    <link rel="icon" type="image/png" sizes="180x180" href="assets/img/favicon18040fb.png?h=52afd1ab3940c8a049d60216da57108b">
-    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/TouchIconfe39.png?h=5df874cc087cb7ee45f004a8d58f9e1c">
-    <link rel="icon" type="image/png" sizes="512x512" href="assets/img/TouchIconfe39.png?h=5df874cc087cb7ee45f004a8d58f9e1c">
-    <link rel="stylesheet" href="../cdn.jsdelivr.net/npm/bootswatch%405.1.3/dist/solar/bootstrap.min.css">
-    <link rel="manifest" href="manifest04f0.json?h=ec61e438209a699e8c4f30014fc95697">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&amp;display=swap">
-    <link rel="stylesheet" href="../use.fontawesome.com/releases/v5.12.0/css/all.css">
-    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/typicons/2.0.9/typicons.min.css">
-    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min76b8.css?h=c2cd6f3f03048985338d131849447f65">
-    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="assets/css/styles.min6096.css?h=9da05d4c6fec3985ea0ac0e2e5ae4779">
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8L9YMBLL5E"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+a:link    { text-decoration: underline;  color: #00f; }
+a:visited { text-decoration: underline;  color: #000; }
+a:hover   { text-decoration: underline;  color: #c00; }
+a:active  { text-decoration: underline; }
 
-  gtag('config', 'G-8L9YMBLL5E');
-</script>
+#pageContent {
+	clear: both;
+	border-bottom: 6px solid #000;
+	padding: 10px;  padding-top: 20px;
+	line-height: 1.65em;
+	background-image: url(backblue.gif);
+	background-repeat: no-repeat;
+	background-position: top right;
+	}
+
+#pageContent, #siteNavigation {
+	background-color: #ccd;
+	}
+
+
+.imgLeft  { float: left;   margin-right: 10px;  margin-bottom: 10px; }
+.imgRight { float: right;  margin-left: 10px;   margin-bottom: 10px; }
+
+hr { height: 1px;  color: #000;  background-color: #000;  margin-bottom: 15px; }
+
+h1 { margin: 0;  font-weight: bold;  font-size: 2em; }
+h2 { margin: 0;  font-weight: bold;  font-size: 1.6em; }
+h3 { margin: 0;  font-weight: bold;  font-size: 1.3em; }
+h4 { margin: 0;  font-weight: bold;  font-size: 1.18em; }
+
+.blak { background-color: #000; }
+.hide { display: none; }
+.tableWidth { min-width: 400px; }
+
+.tblRegular       { border-collapse: collapse; }
+.tblRegular td    { padding: 6px;  background-image: url(fade.gif);  border: 2px solid #99c; }
+.tblHeaderColor, .tblHeaderColor td { background: #99c; }
+.tblNoBorder td   { border: 0; }
+
+
+// -->
+</style>
+
 </head>
 
-<body style="font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Helvetica, Arial, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;;">
-    <div class="d-block" style="position: relative;z-index: 9998;">
-        <div class="text-center d-flex justify-content-center align-items-center navWrap" id="navBar" style="position: fixed;width: 100%;top: 0px;z-index: 10;">
-            <div class="d-flex justify-content-center align-items-center" id="navHomeBtn" style="cursor: pointer;height: 53px;padding-top: 14px;" onclick="openNav()">
-                <div style="padding-left: 10px;">
-<svg width="36px" height="33px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <defs>
-        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-poel3es0vw-1">
-            <stop stop-color="#FFE031" offset="0%"></stop>
-            <stop stop-color="#FFC40A" offset="99.7186407%"></stop>
-        </linearGradient>
-    </defs>
-    <g id="Site-Color-Ideas" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="navIcon" transform="translate(-7.000000, -9.000000)" fill="url(#linearGradient-poel3es0vw-1)" fill-rule="nonzero">
-            <path d="M7,19.8562092 C7,13.4934641 11.4048338,9 17.0966767,9 C20.6314199,9 23.3867069,10.9591503 25,13.9068627 C26.6495468,10.9411765 29.3685801,9 32.9033233,9 C38.5951662,9 43,13.4934641 43,19.8562092 C43,27.5130719 36.5287009,35.0441176 26.3232628,41.5147059 C25.9244713,41.748366 25.3806647,42 25,42 C24.6193353,42 24.0755287,41.748366 23.694864,41.5147059 C13.4712991,35.0441176 7,27.5130719 7,19.8562092 Z M38.2528835,38.3239312 L34.4967069,38.32446 C34.2962773,38.32446 34.133797,38.1636045 34.133797,37.9651792 C34.133797,37.8597443 34.1805773,37.759631 34.2617178,37.6913392 L34.5023616,37.4873236 L34.5023616,37.4873236 C38.0334274,34.461571 40.6709788,31.3360202 42.3198938,28.1730007 L42.5759664,27.6644121 L42.5759664,27.6644121 C42.6285224,27.5551148 42.7606087,27.508644 42.8710288,27.5606354 C42.932749,27.5896964 42.9765518,27.644808 42.9916041,27.7089939 L42.9973333,27.7585694 L42.9969944,33.6272614 L42.9930947,33.9623343 L42.9846216,34.2689644 L42.9680426,34.6027406 L42.9440357,34.9031294 L42.9236774,35.0868791 C42.8498227,35.6790652 42.7152729,36.0749158 42.497337,36.4783455 C42.1818048,37.0624394 41.7227603,37.5168935 41.1327665,37.8292703 L41.0105387,37.8915432 L41.0105387,37.8915432 L40.8875345,37.9489977 C40.4748531,38.1326319 40.0286323,38.2382067 39.3428983,38.2881861 L39.0174556,38.307 L39.0174556,38.307 L38.7804706,38.3155975 L38.5260252,38.3211963 L38.2528835,38.3239312 Z M25.6666667,22.1216097 L25.6666667,31.645145 C25.6666667,32.4054928 26.2892765,33.0218765 27.0573045,33.0218765 C27.3112403,33.0218765 27.5593183,32.9530652 27.7751764,32.8242589 L27.9006141,32.7398463 C31.5342645,29.9963466 33.6666667,26.3913684 33.6666667,21.8672709 C33.6666667,18.5051873 32.3306395,16.6776732 29.7887553,16.6288949 L29.6497175,16.6278922 C27.0225989,16.6278922 25.6666667,18.4930432 25.6666667,22.1216097 Z M16.3333333,23.470699 C16.3333333,26.7174209 17.838148,30.1175353 20.4098017,32.1225546 L21.1204949,32.6607583 C21.9987879,33.3238922 23.2537913,33.1565912 23.9236235,32.2870811 C24.1893862,31.9420942 24.3333333,31.5202377 24.3333333,31.086371 L24.3326293,23.582721 C24.2979065,20.0954817 22.9792036,18.2807258 20.4547075,18.2323152 L20.2112447,18.2323152 C17.6693605,18.2811012 16.3333333,20.1086154 16.3333333,23.470699 Z M7.56862141,27.9600372 L7.63614252,28.0933746 L7.63614252,28.0933746 C9.18659886,31.09836 11.6297369,34.0700125 14.8840401,36.9549177 L15.4559537,37.452124 L15.4559537,37.452124 L15.6112461,37.5826621 L15.6112461,37.5826621 C15.7903439,37.7329351 15.8124324,37.998495 15.6606093,38.1757748 C15.5959952,38.2512231 15.5071846,38.3011127 15.4102994,38.3180505 L15.3363733,38.32446 L11.7444498,38.3239312 L11.4713081,38.3211963 L11.2168627,38.3155975 L10.8675467,38.3015346 L10.6544351,38.2881861 C10.0115594,38.2413304 9.57919346,38.1456116 9.18761992,37.9825198 L8.9867946,37.8915432 L8.86456688,37.8292703 L8.86456688,37.8292703 C8.27457302,37.5168935 7.81552849,37.0624394 7.5,36.4783455 C7.29762728,36.1037322 7.16715744,35.7356539 7.0904192,35.2108453 L7.05329768,34.9031294 L7.02929071,34.6027406 L7.01271177,34.2689644 L7.00423867,33.9623343 L7.00033892,33.6272614 L7,28.0913074 C7,27.9273962 7.13421846,27.7945199 7.29978533,27.7945199 C7.41392293,27.7945199 7.51815817,27.8586849 7.56862141,27.9600372 Z" id="Shape"></path>
-        </g>
-    </g>
-</svg></div>
-            </div>
-            <div id="sideNav" class="sidenav">
-                <div><a id="navHomeBtnClose" class="navWrap" href="javascript:void(0)" onclick="closeNav()">×</a></div>
-                <div class="align-items-center" style="position: relative;height: 100%;width: 100%;">
-                    <div class="navContents" style="width: 100%;"><a class="navButton" href="https://twitter.com/messages/compose?recipient_id=14279967">
-                            <div class="d-flex justify-content-between align-items-center" style="position: sticky;top: 0px;margin-top: 0px;padding: 12px;padding-top: 9px;padding-bottom: 9px;"><span class="text-end d-flex justify-content-end" style="padding-right: 0px;/*color: rgb(255,255,255);*/font-size: 22px;font-weight: bold;">Contact<br></span>
-                                <div><i class="fas fa-arrow-right"></i></div>
-                            </div>
-                        </a><a class="navButton" href="https://www.paypal.com/paypalme/polyphian">
-                            <div class="d-flex justify-content-between align-items-center" style="position: sticky;top: 0px;margin-top: 0px;padding: 12px;padding-top: 9px;padding-bottom: 9px;"><span class="text-end d-flex justify-content-end" style="padding-right: 0px;/*color: rgb(255,255,255);*/font-size: 22px;font-weight: bold;">Donate<br></span>
-                                <div><i class="fas fa-arrow-right"></i></div>
-                            </div>
-                        </a><a class="navButton" href="index-2.html">
-                            <div class="d-flex justify-content-between align-items-center" style="position: sticky;top: 0px;margin-top: 0px;padding: 12px;padding-top: 9px;padding-bottom: 9px;"><span class="text-end d-flex justify-content-end" style="padding-right: 0px;/*color: rgb(255,255,255);*/font-size: 22px;font-weight: bold;">Home<br></span>
-                                <div><i class="fas fa-arrow-right"></i></div>
-                            </div>
-                        </a><a class="navButton" href="Icons.html">
-                            <div class="d-flex justify-content-between align-items-center" style="position: sticky;top: 0px;margin-top: 0px;padding: 12px;padding-top: 9px;padding-bottom: 9px;"><span class="text-end d-flex justify-content-end" style="padding-right: 0px;/*color: rgb(255,255,255);*/font-size: 22px;font-weight: bold;">Icons<br></span>
-                                <div><i class="fas fa-arrow-right"></i></div>
-                            </div>
-                        </a><a class="navButton" href="Laetus.html">
-                            <div class="d-flex justify-content-between align-items-center" style="position: sticky;top: 0px;margin-top: 0px;padding: 12px;padding-top: 9px;padding-bottom: 9px;"><span class="text-end d-flex justify-content-end" style="padding-right: 0px;/*color: rgb(255,255,255);*/font-size: 22px;font-weight: bold;">Laetus<br></span>
-                                <div><i class="fas fa-arrow-right"></i></div>
-                            </div>
-                        </a><a class="navButton" href="Shortcuts.html">
-                            <div class="d-flex justify-content-between align-items-center" style="position: sticky;top: 0px;margin-top: 0px;padding: 12px;padding-top: 9px;padding-bottom: 9px;"><span class="text-end d-flex justify-content-end" style="padding-right: 0px;/*color: rgb(255,255,255);*/font-size: 22px;font-weight: bold;">Shortcuts<br></span>
-                                <div><i class="fas fa-arrow-right"></i></div>
-                            </div>
-                        </a></div>
-                </div>
-            </div><script>
-function openNav() {
-  document.getElementById("sideNav").style.width = "100%";
-  document.getElementById("navHomeBtn").style.opacity = "0";
-  document.getElementById("navHomeBtnClose").style.opacity = "1";
-}
+<table width="76%" border="0" align="center" cellspacing="0" cellpadding="3" class="tableWidth">
+	<tr>
+	<td id="subTitle">HTTrack Website Copier - Open Source offline browser</td>
+	</tr>
+</table>
+<table width="76%" border="0" align="center" cellspacing="0" cellpadding="0" class="tableWidth">
+<tr class="blak">
+<td>
+	<table width="100%" border="0" align="center" cellspacing="1" cellpadding="0">
+	<tr>
+	<td colspan="6"> 
+		<table width="100%" border="0" align="center" cellspacing="0" cellpadding="10">
+		<tr> 
+		<td id="pageContent"> 
+<!-- ==================== End prologue ==================== -->
 
-function closeNav() {
-  document.getElementById("sideNav").style.width = "0";
-  document.getElementById("navHomeBtn").style.opacity = "1";
-  document.getElementById("navHomeBtnClose").style.opacity = "0";
-}
-</script>
+	<meta name="generator" content="HTTrack Website Copier/3.x">
+	<TITLE>Local index - HTTrack</TITLE>
+</HEAD>
+<BODY>
+<H1 ALIGN=Center>Index of locally available sites:</H1>
+	<TABLE BORDER="0" WIDTH="100%" CELLSPACING="1" CELLPADDING="0">
+		<TR>
+			<TD BACKGROUND="fade.gif">
+				&middot;
+					<A HREF="broank.bss.design/index.html">
+						Broank
+					</A>		
+			</TD>
+		</TR>
+	</TABLE>
+	<BR>
+	<BR>
+	<BR>
+  	<H6 ALIGN="RIGHT">
+	<I>Mirror and index made by HTTrack Website Copier [XR&amp;CO'2008]</I>
+	</H6>
+	<!-- Mirror and index made by HTTrack Website Copier/3.49-2 [XR&CO'2014] -->
+	<!-- Thanks for using HTTrack Website Copier! -->
+	<meta HTTP-EQUIV="Refresh" CONTENT="0; URL=broank.bss.design/index.html">
 
 
-        </div>
-        <div class="d-flex justify-content-center" style="height: 18px;top: 15px;position: fixed;width: 100%;z-index: 9999;pointer-events: none;">
-            <div class="navBroGlow" style="height: 25px;width: 10%;margin-left: 5px;"></div>
-        </div>
-        <div style="height: 53px;"></div>
-    </div>
-    <div class="pageTitle" style="padding-top: 5vh;padding-bottom: 0px;position: sticky;">
-        <h1 class="display-1 text-center insetH" style="font-weight: bold;">Welcome</h1>
-    </div>
-    <section style="position: relative;padding-top: 23px;margin-top: 5px;">
-        <div class="cardA" style="position: relative;">
-            <div class="d-xl-flex justify-content-xl-center cardTop" style="position: relative;/*background: linear-gradient(black, rgb(62,62,62) 24%, rgb(167,167,167) 65%, white);*/">
-                <div class="text-center" style="margin-top: 6px;"><img class="img-fluid" src="assets/img/Icons3fad.png?h=32c4d7bcbbae3bb8e67628115970642d"></div>
-            </div>
-            <div class="cardBottom">
-                <div class="d-flex justify-content-between align-items-center" style="margin-top: 0px;min-height: 28px;max-height: 50px;">
-                    <div class="d-flex align-items-center">
-                        <div>
-                            <div>
-                                <div class="cardActionTitle"><span>Icon Themes</span></div>
-                                <div class="cardActionSubtitle"><span>For use with Shortcuts.app<br></span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div><a class="Bbtn Brounded3" href="Icons.html">VIEW</a></div>
-                </div>
-                <div id="collapseGL" class="collapse" style="margin-top: 20px;margin-bottom: 11px;">
-                    <p>Join the Glance Discord channel to gain access to the beta.<br></p><a class="insetButtonC cardActionLink" href="https://discord.gg/Y5zMYsYEyB">Join Beta</a>
-                </div>
-            </div>
-        </div>
-        <div class="cardA" style="position: relative;">
-            <div class="d-xl-flex justify-content-xl-center cardTop" style="position: relative;/*background: linear-gradient(black, rgb(62,62,62) 24%, rgb(167,167,167) 65%, white);*/">
-                <div class="text-center" style="margin-top: 6px;"><img class="img-fluid" src="assets/img/Shortcutsbe6a.png?h=68a7410629f3143d14486fca4d594264"></div>
-            </div>
-            <div class="cardBottom">
-                <div class="d-flex justify-content-between align-items-center" style="margin-top: 0px;min-height: 28px;max-height: 50px;">
-                    <div class="d-flex align-items-center">
-                        <div>
-                            <div>
-                                <div class="cardActionTitle"><span>Shortcuts</span></div>
-                                <div class="cardActionSubtitle"><span>Dress up your iPhone<br></span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div><a class="Bbtn Brounded3" href="Shortcuts.html">VIEW</a></div>
-                </div>
-                <div id="collapseGL-1" class="collapse" style="margin-top: 20px;margin-bottom: 11px;">
-                    <p>Join the Glance Discord channel to gain access to the beta.<br></p><a class="insetButtonC cardActionLink" href="https://discord.gg/Y5zMYsYEyB">Join Beta</a>
-                </div>
-            </div>
-        </div>
-        <div class="cardA" style="position: relative;">
-            <div class="d-xl-flex justify-content-xl-center cardTop padding0top" style="position: relative;/*background: linear-gradient(black, rgb(62,62,62) 24%, rgb(167,167,167) 65%, white);*/">
-                <div class="text-center" style="margin-top: 36px;"><img class="img-fluid" src="assets/img/Laetus984c.png?h=d1eeff7ba33183fc0a1cd0fc2f61cb5e" style="border-top-left-radius: 22px;border-top-right-radius: 22px;"></div>
-            </div>
-            <div class="cardBottom">
-                <div class="d-flex justify-content-between align-items-center" style="margin-top: 0px;min-height: 28px;max-height: 50px;">
-                    <div class="d-flex align-items-center">
-                        <div>
-                            <div>
-                                <div class="cardActionTitle"><span>Laetus</span></div>
-                                <div class="cardActionSubtitle"><span>Jailbroken keyboard themes<br></span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div><a class="Bbtn Brounded3" href="Laetus.html">VIEW</a></div>
-                </div>
-                <div id="collapseGL-2" class="collapse" style="margin-top: 20px;margin-bottom: 11px;">
-                    <p>Join the Glance Discord channel to gain access to the beta.<br></p><a class="insetButtonC cardActionLink" href="https://discord.gg/Y5zMYsYEyB">Join Beta</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <div class="pageTitle" style="padding-top: 10vh;padding-bottom: 0px;">
-        <h1 class="display-1 text-center insetH" style="font-weight: bold;margin-bottom: 0px;">thank you</h1>
-        <h1 class="display-1 text-center insetH" style="font-weight: bold;margin-bottom: 106px;font-size: 20.2px;">for your support</h1>
-    </div>
-    <script src="../cdn.jsdelivr.net/npm/bootstrap%405.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script src="assets/js/script.mincd4e.js?h=1365680e891bb375c45964803d5f74c7"></script>
+<!-- ==================== Start epilogue ==================== -->
+		</td>
+		</tr>
+		</table>
+	</td>
+	</tr>
+	</table>
+</td>
+</tr>
+</table>
+
+<table width="76%" border="0" align="center" valign="bottom" cellspacing="0" cellpadding="0">
+	<tr>
+	<td id="footer"><small>&copy; 2008 Xavier Roche & other contributors - Web Design: Leto Kauler.</small></td>
+	</tr>
+</table>
+
 </body>
 
-
-<!-- Mirrored from broank.bss.design/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 25 Jan 2022 15:37:30 GMT -->
 </html>
+
+
